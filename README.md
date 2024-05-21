@@ -1,15 +1,29 @@
 # tinyPet
 
-#Endppoint :
-
-
-Ajouter un nouvel utilisateur :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/addUser/TESTUSER
 
 Créer une pétition :
 
 https://projet-test-414213.nw.r.appspot.com/indexTinyPet.html#!/login
+
+#Endppoint :
+
+Créer une pétition :
+
+https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/
+
+{
+"name": "Ceci est une pétition",
+"description": "En effet les pétitions c'est bien mais quand ça scale c'est mieux bref...",
+"tags": "Je suis un tag stylé, tag pas ouf de mon côté",
+"userId": "",
+"token": "",
+"email": "rchevalet2@gmail.com",
+"pseudo": "C'est un SCANDALE"
+}
+
+Ajouter un nouvel utilisateur :
+
+https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/addUser/TESTUSER
 
 Obtenir une pétition (id pétition) :
 
