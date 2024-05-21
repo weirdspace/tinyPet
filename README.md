@@ -9,7 +9,7 @@ https://projet-test-414213.nw.r.appspot.com/indexTinyPet.html#!/login
 
 Créer une pétition :
 
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/
+https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/createPetition
 
 {
 "name": "Ceci est une pétition",
