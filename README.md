@@ -44,3 +44,7 @@ https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petiti
 Obtenir la liste des user qui ont signé une pétition donnéen (id pétition) :
 
 https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/usersSigned/5634601401712640
+
+Les 100 pétitions les plus récentes :
+
+https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/top100Petitions
