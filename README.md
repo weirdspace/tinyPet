@@ -50,4 +50,5 @@ Les 100 pétitions les plus récentes :
 https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/top100Petitions
 
 Obtention des pétitions contenant le/les tags demandés (tag1,tag2,...) :
+
 https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionsByTags/t,chien,save,Je%20suis%20un%20tag%20styl%C3%A9
