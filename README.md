@@ -18,6 +18,8 @@
 
 - Obtenir la liste des utilisateurs qui ont signés une pétition donnée
 
+- Obtenir la liste des pétitions créées par un utilisateur
+
 - Obtenir la liste des pétitions signées par un utilisateur
 
 - Obtenir des pétitions contenant le/les tags demandés (tag1,tag2,...)
