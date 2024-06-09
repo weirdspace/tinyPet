@@ -193,6 +193,33 @@
 			"response": []
 		},
 		{
+			"name": "LIST DES PETITIONS CREEES PAR UN UTILISATEUR ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionCreatedUser/rchevalet2@gmail.com",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"petitionCreatedUser",
+						"rchevalet2@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "LIST DES PETITIONS SIGNEE PAR UN UTILISATEUR (MAIL)",
 			"request": {
 				"method": "GET",
