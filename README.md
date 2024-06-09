@@ -1,54 +1,21 @@
 # tinyPet
-Endpoints à Mettre à jour
 
-Créer une pétition :
+Possibilités :
 
-https://projet-test-414213.nw.r.appspot.com/indexTinyPet.html#!/login
+- Créer une pétition
 
-#Endppoint :
+- Ajouter un nouvel utilisateur
 
-Créer une pétition :
+- Obtenir une pétition
 
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/createPetition
+- Signer une pétition
 
-{
-"name": "Ceci est une pétition",
-"description": "En effet les pétitions c'est bien mais quand ça scale c'est mieux bref...",
-"tags": "Je suis un tag stylé, tag pas ouf de mon côté",
-"userId": "",
-"token": "",
-"email": "rchevalet2@gmail.com",
-"pseudo": "C'est un SCANDALE"
-}
+- Obtenir le nombre de signature d'une pétition
 
-Ajouter un nouvel utilisateur :
+- Obtenir la liste des pétitions singée par un user
 
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/addUser/TESTUSER
+- Obtenir la liste des user qui ont signé une pétition donnéen
 
-Obtenir une pétition (id pétition) :
+- Les 100 pétitions les plus récentes :
 
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petition/5714489739575296
-
-Signer une pétition (id pétition/idUser) :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/signer/5714489739575296/michelfermier
-
-Obtenir le nombre de signature d'une pétition (id pétition) :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/signatures/5714489739575296
-
-Obtenir la liste des pétitions singée par un user (idUser) :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionSignedUser/TESTUSER2
-
-Obtenir la liste des user qui ont signé une pétition donnéen (id pétition) :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/usersSigned/5634601401712640
-
-Les 100 pétitions les plus récentes :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/top100Petitions
-
-Obtention des pétitions contenant le/les tags demandés (tag1,tag2,...) :
-
-https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionsByTags/t,chien,save,Je%20suis%20un%20tag%20styl%C3%A9
+- Obtention des pétitions contenant le/les tags demandés (tag1,tag2,...)
