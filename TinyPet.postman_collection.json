@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "4a449463-3371-4e5c-84c9-5abe8dd0456a",
+		"name": "TinyPet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35089696"
+	},
+	"item": [
+		{
+			"name": "CREER PETITION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ceci est une pétition\",\r\n    \"description\": \"En effet les pétitions c'est bien mais quand ça scale c'est mieux bref...\",\r\n    \"tags\": \"Je suis un tag stylé, tag pas ouf de mon côté\",\r\n    \"userId\": \"{{idgoogle1}}\", // id google\r\n    \"token\": \"{{token1}}\", // token\r\n    \"email\": \"\", // optionnel car vérifié dans le back\r\n    \"pseudo\": \"\" // optionnel car vérifié dans le back\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/createPetition",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"createPetition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AJOUTER UTILISATEUR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pseudo\": \"DARK BG DU 44\",\r\n    \"userId\": \"{{idgoogle2}}\",\r\n    \"token\": \"{{token2}}\" \r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/addUser",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIGNER UNE PETITION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"5075408403824640\",\r\n    \"userId\": \"{{idgoogle2}}\",\r\n    \"token\": \"{{token2}}\"\r\n\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/signer",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"signer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENIR UNE PETITION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petition/5714489739575296",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"petition",
+						"5714489739575296"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NOMBRE SIGNATURE D'UNE PETITION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/signatures/5075408403824640",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"signatures",
+						"5075408403824640"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UTILISATEURS AYANT SIGNE PETITION DONNEE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/usersSigned/5075408403824640",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"usersSigned",
+						"5075408403824640"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIST DES PETITIONS SIGNEE PAR UN UTILISATEUR (MAIL)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionSignedUser/TESTUSER",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"petitionSignedUser",
+						"TESTUSER"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENIR PETITION PAR TAG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/petitionsByTags/t,chien,save,Je suis un tag stylé",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"petitionsByTags",
+						"t,chien,save,Je suis un tag stylé"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TOP 100 PETITION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://projet-test-414213.nw.r.appspot.com/ressources/api/myTinyPet/v666/top100Petitions",
+					"protocol": "https",
+					"host": [
+						"projet-test-414213",
+						"nw",
+						"r",
+						"appspot",
+						"com"
+					],
+					"path": [
+						"ressources",
+						"api",
+						"myTinyPet",
+						"v666",
+						"top100Petitions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token1",
+			"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3NGRiYmE4ZmFlZTY5YWNhZTFiYzFiZTE5MDQ1MzY3OGY0NzI4MDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4NDk2MzMyMTczNjQtNnFtbXZoNWk3c2VlMjRkdjl1bGIyNWh2a2dxZGI2amwuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4NDk2MzMyMTczNjQtNnFtbXZoNWk3c2VlMjRkdjl1bGIyNWh2a2dxZGI2amwuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDc1NjMwOTEzNTQwNjA5MzEwNTAiLCJlbWFpbCI6InJjaGV2YWxldDJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5iZiI6MTcxNzk2NjEwMywibmFtZSI6IkMnZXN0IHVuIFNDQU5EQUxFIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pHLXlKNG5JaVR6SnVfbndhaHpCRnhWTkNuUDlZTWRUR2ZjYVZjc2dEX2JqTDFEZDdpPXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkMnZXN0IHVuIiwiZmFtaWx5X25hbWUiOiJTQ0FOREFMRSIsImlhdCI6MTcxNzk2NjQwMywiZXhwIjoxNzE3OTcwMDAzLCJqdGkiOiIyYzc4ZWQ3NGZlOGVmZmM2OWVmN2E4MWVjYmM1NzIyZDc4YTgwZjhkIn0.o8vht3FnacLnqZH6zsgrFPbYxQhTp92I2Iq-xDPGKIzguB8t9GmTfcVX0mnLiu5nNrPrRRYhLLf2zza7ejs139kSxj6BCeJUqAH4YJB1VdbOuJ5xeGRRpjGWs9jdws8l59tlb-VNDRJa4-KevfR33JJJt3F6UQrcc1kcdlO9SxGvW9XYOYwKLpkEOStPhcSmEPSOr52jF4pSAxu7S4X4r4N0eDmvaZVKS0jVCSABLHCmCgl_wXsWr5XePEy__y-EOltvBaJjt5cP567zl-y6d71Sm3yjVUCSTZQBQrsSZPMFZMD9Xnfh5ebYtNGY1frm2MkvOEkJnAHp9Lq07pltdw",
+			"type": "string"
+		},
+		{
+			"key": "idgoogle2",
+			"value": "101870286807604240508",
+			"type": "string"
+		},
+		{
+			"key": "idgoogle1",
+			"value": "107563091354060931050",
+			"type": "string"
+		},
+		{
+			"key": "token2",
+			"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3NGRiYmE4ZmFlZTY5YWNhZTFiYzFiZTE5MDQ1MzY3OGY0NzI4MDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4NDk2MzMyMTczNjQtNnFtbXZoNWk3c2VlMjRkdjl1bGIyNWh2a2dxZGI2amwuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI4NDk2MzMyMTczNjQtNnFtbXZoNWk3c2VlMjRkdjl1bGIyNWh2a2dxZGI2amwuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDE4NzAyODY4MDc2MDQyNDA1MDgiLCJlbWFpbCI6ImNoZXZhbGV0LnJvbWFpbkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmJmIjoxNzE3OTcwNzE5LCJuYW1lIjoiUiBDIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0xEblZpdENSUTJWMHpYOUVQRkhQc1E4Z1ROTm83dE9lYkhvbVR3WGJSZlpWUUM3R2M9czk2LWMiLCJnaXZlbl9uYW1lIjoiUiIsImZhbWlseV9uYW1lIjoiQyIsImlhdCI6MTcxNzk3MTAxOSwiZXhwIjoxNzE3OTc0NjE5LCJqdGkiOiJhNjQ3YTI5NTZlZmZhZmYxNmNiNTZlYjY1M2QzYWVmOTJhNWNmZWZiIn0.D9pRqy4JiaBgEv5xerntsEF8GwOzGyjUA6eEI9r-hghsUgxwro4NKn7cmilWwbweE888k4fr7BF3TdCpmeRU8HbZtbK8IHNh9NpwfntqoFg4hNm7iyB2iy_LJcwl9wDuJugGpPkHLRsqF5bBWw4SCm-_LW2mIEvYhh4XL1pibY190UsoO2eOOE04XdhxUVeFyFs85wU_m9UeEJhjQaTQQea6axJVYSx6nqZcWUAp4wMYWToRavlvNVdHU9baY6oPSw13w9gB1O2iXsycxlZC11BiEP0OoA57_1eVS9ORx_j9j9S2H01izPnN0A4lMoYF-8ywT8Ywrr3AH1sYoB56Ew",
+			"type": "string"
+		}
+	]
+}
