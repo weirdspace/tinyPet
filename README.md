@@ -1,5 +1,7 @@
 # tinyPet
 
+Support de la version mobile
+
 ## Possibilités :
 
 ### POST
