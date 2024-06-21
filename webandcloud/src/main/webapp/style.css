@@ -1,0 +1,369 @@
+/* Make sure the table is responsive */
+.table-container {
+    overflow-x: auto;
+}
+
+.table-container table {
+    width: 100%;
+    min-width: 600px;
+}
+
+/* Basic styles for the table */
+.table {
+    width: 100%;
+    table-layout: auto;
+}
+
+/* Make columns flexible and center content */
+.table th, .table td {
+    word-wrap: break-word;
+    white-space: normal; /* Allow line breaks */
+    text-align: center; /* Center text */
+    vertical-align: middle; /* Vertically center */
+}
+
+/* Specific styles for the description */
+.table td.description {
+    max-width: 200px; /* Adjust this value as needed */
+    word-break: break-word; /* Allow line breaks for long words */
+}
+
+@media (max-width: 768px) {
+    .navbar-item .input {
+        width: 100%;
+        max-width: none; /* Supprime la limite de largeur maximale pour les petits écrans */
+    }
+
+    .navbar-item {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-end {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between buttons */
+        text-align: center;
+    }
+
+    .navbar-brand, .navbar-start, .navbar-end {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar-item-search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px; /* Add space below the search bar */
+    }
+
+    .navbar-item-google {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .table td {
+        text-align: center;
+        position: relative;
+    }
+
+    .notification {
+        padding: 1.5vh; /* ajustez le padding sur les appareils mobiles */
+    }
+}
+
+/* Centrer le contenu de l'en-tête et ajuster les boutons */
+.header {
+    text-align: center;
+    background-color: white; /* Fond blanc pour le header */
+    padding: 1rem;
+}
+
+.footer {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer img {
+    width: 250px; 
+    margin: 0 75px;
+}
+
+.footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de se déplacer sur une nouvelle ligne si nécessaire */
+}
+
+.navbar-brand, .navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.box p {
+    word-wrap: break-word; /* Permet de casser les mots longs */
+    overflow-wrap: break-word; /* Alternative à word-wrap pour assurer la compatibilité avec tous les navigateurs */
+    white-space: pre-wrap; /* Conserve les espaces et les sauts de ligne */
+}
+
+.box .title {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.tabs {
+    margin-bottom: 1em;
+}
+
+.highlight {
+    background-color: lightgreen;
+}
+
+.highlight-transition {
+    transition: background-color 4s ease;
+    background-color: white;
+}
+
+.loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.search-results {
+    margin-top: 20px;
+    max-height: 400px; /* Set a max height for the search results container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style de base pour les boutons du header */
+.header-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Styles spécifiques pour chaque bouton */
+.header-button-light {
+    background-color: #ffffff;
+    border-color: #00d1b2;
+    color: #00d1b2;
+}
+
+.header-button-light:hover {
+    background-color: #00d1b2;
+    color: #ffffff;
+}
+
+.header-button-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+}
+
+.header-button-primary:hover {
+    background-color: #0056b3;
+}
+
+.header-button-link {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #ffffff;
+}
+
+.header-button-link:hover {
+    background-color: #004085;
+}
+
+.header-button-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #ffffff;
+}
+
+.header-button-info:hover {
+    background-color: #117a8b;
+}
+
+.header-button-disabled {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+    color: #6c757d;
+    cursor: default;
+    pointer-events: none; /* Désactiver le clic */
+}
+
+.navbar-end {
+    align-items: center;
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+/* Styles pour le champ de recherche */
+.navbar-item .input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #00d1b2;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-item.user-info {
+    font-weight: bold;
+    margin-right: 20px; /* Espacement à droite de l'information utilisateur */
+}
+
+
+
+/* Améliorer la réactivité du conteneur de l'input */
+.navbar-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.notification-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 20rem;
+    max-width: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.05vw; 
+
+}
+
+/* Style de base des notifications */
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.05vw; 
+    position: relative;
+    animation: slide-in 0.3s ease-out;
+    cursor: pointer; 
+    padding: 1rem;
+
+}
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Barre de progression */
+.notification .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.25vw; 
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: progress 5s linear;
+}
+
+@keyframes progress {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/* Bouton de fermeture */
+.notification .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1vw; 
+    cursor: pointer;
+}
+
+/* Types de notifications */
+.notification.success {
+    background-color: green;
+}
+
+.notification.error {
+    background-color: red;
+}
