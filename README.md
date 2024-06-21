@@ -35,11 +35,15 @@ https://projet-test-414213.nw.r.appspot.com
 
 ![image](https://github.com/weirdspace/tinyPet/assets/66961116/94c04adc-d476-4d25-9ca9-1d2587e13a5f)
 
-### Qu’est ce qui marche?
+### Qu’est ce qui marche ?
 
-  Toutes les fonctionnalités demandées ont été inclus
+  Toutes les fonctionnalités demandées ont été implémentées
 
 ### Qu’est ce qui marche pas ?
+
+### Les difficultés : 
+
+La gestion du nombre maximum d'utilisateur par une liste limité à 40 000, ce que nous a forcer à changer la logique du back afin de résoudre ce problème
 
 Rien
 
