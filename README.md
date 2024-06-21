@@ -45,7 +45,5 @@ https://projet-test-414213.nw.r.appspot.com
 
 La gestion du nombre maximum d'utilisateur par une liste limité à 40 000, ce que nous a forcer à changer la logique du back afin de résoudre ce problème
 
-Rien
-
   
 
